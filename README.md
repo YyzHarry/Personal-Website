@@ -6,9 +6,9 @@ This is my personal website.<br>
 
 ## Usage
 		$ git clone
-'''Git
+```Git
 $ git clone
-'''
+```
 
 ## Link
-[Yuzhe's Homepage]:https://yyzharry.github.io/
+[Yuzhe's Homepage](https://yyzharry.github.io/)
