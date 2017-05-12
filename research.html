@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Research</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">About Me</div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-category">Research</div>
+<div class="menu-item"><a href="research.html" class="current">Research</a></div>
+<div class="menu-item"><a href="publications.html">Publications</a></div>
+<div class="menu-category">Study</div>
+<div class="menu-item"><a href="project.html">Course&nbsp;Projects</a></div>
+<div class="menu-item"><a href="honor.html">Honors</a></div>
+<div class="menu-category">Others</div>
+<div class="menu-item"><a href="others.html">My&nbsp;Github</a></div>
+<div class="menu-item"><a href="personal.html">Personal</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Research</h1>
+</div>
+<p>Here is a list of my research projects.</p>
+<h2>3D Spectrum Map Building using Mobile Sensing</h2>
+<p><b>Yuzhe Yang</b>, Chao Yao, Lingyang Song. <br />
+<i>Time: Aug. 2016 - Dec. 2016</i></p>
+<table class="imgtable"><tr><td>
+<img src="static/uav2.png" alt="uav2" width="150px" height="120px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="static/uav3.png" alt="uav3" width="150px" height="120px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<p>Above are images of our own built UAV.</p>
+<p>We are doing research on UAV(Unmanned Aerial Vehicles)-aided communication. By adding several written modules , we aim to realize new applications under new scenarios of wireless communication.
+I assembled two UAVs with separated modules, adjusted their PID parameters by debugging motors’ outputs, and realized stable flying and loitering. Also, SITL on Linux was used to do UAV simulations.</p>
+<p>The main method we use is that we divided whole room into several cubes, used the Sentinel cruise function to sense the Wi-Fi intensity of each cube and collected several sets of data timely.
+And we used each cube’s statistical mean of RSS as the merit to rebuild the 3D Wi-Fi Spectrum map of indoor circumstance.</p>
+<p>We now try to use UAV, associated with Android phones, to sense the intensity of WiFi.
+Then we use the collected datas to build the 3D Wi-Fi Spectrum of indoor circumstance.</p>
+<h2>Fine-grained 3D Realtime AQI Monitoring by UAV</h2>
+<p><b>Yuzhe Yang</b>, Zijie Zheng, Lingyang Song. <br />
+<i>Time: Dec. 2016 - Jul. 2017 (Expected)</i></p>
+<table class="imgtable"><tr><td>
+<img src="static/phantom-uav.jpg" alt="uav" width="150px" height="120px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<p>We used UAV-based sensors to study the distribution of AQI in specific and normal scenarios.
+A dynamic system is built consisting of an UAV and other sensors, and implemented real-time measurement.</p>
+<p>Then we proposed a novel distribution model of AQI to realize the precisely prediction of AQI in a given fine-grained area.
+The model we use is mainly based on a physical model which can precisely reflect the movements of particles.
+We used the data we collected to train the models, and compared its accuracy with several existing models.</p>
+<p>Then based on the proposed model, we design  <i>adaptive monitoring techniques</i> for UAV realtime measurement, named as <i>complete</i> monitoring and <i>optimized</i> monitoring.
+Experimental results have shown our proposal can effectively reduce the power consumption of whole system.</p>
+<p>Up to now, our work has been submitted to <i><b>IEEE GLOBECOM</b></i> and <i><b>ACM Mobicom</b></i>.</p>
+<p>I'm now working on improving the model's estimation accuracy, by adding a non-linear part implemented by <b>Neural Networks</b>. Also, optimization problems are formed to choose optimal ways for UAV trajectory.</p>
+<div id="footer">
+<div id="footer-text">
+Last generated on 2017-05-12.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
