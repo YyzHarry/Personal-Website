@@ -31,6 +31,19 @@
 <p>These are my research projects. I'm now working in the <a href="http://wireless.pku.edu.cn/">Institute of Advanced Communications</a>, advised by <a href="http://wireless.pku.edu.cn/home/songly/index.html">Prof. Lingyang Song</a>.</p>
 <h2>Optimal Trajectory Planning of Drones for 3D Mobile Sensing</h2>
 <p>Time: <i>Jun. 2017 - Aug. 2017</i></p>
+<img src="static/Compare1.jpg" height="150px">
+<img src="static/Compare2.jpg" height="150px">
+<img src="static/Compare3.jpg" height="150px">
+<img src="static/Compare4.jpg" height="150px">
+<img src="static/TimeDomain_3d.jpg" height="200px">
+<img src="static/BatteryDomain_3d.jpg" height="200px">
+<p>Mobile sensing is challenging in 3D space, as there are many inaccessible places where people rarely venture. Unmanned aerial vehicle (UAV) has greatly extended the scope of mobile sensing in 3D space, but the short battery life of drones has largely restricted the wide adoption of these applications. To maximally expand the sensing scope of the drone, we study the trajectory planning problem for optimizing its flight route in 3D space, given its limited battery life.</p>
+<p>As the conventional ways, they always select number of stops first, then find the shortest path connecting those stops, like the famous TSP problem. However, such a stop-selection-first strategy does not work well for planning a drone's trajectory. Hence, we take a different approach by finding the optimal path first and then selecting the measurement locations, using the domain sets in graph theory.</p>
+<p>We establish a multi-layer 3D network model that are formed by multiple 2D networks for mobile sensing in the 3D space. Then, we formulate the problem as a combination of the minimum dominating path problem and the constrained minimum dominating set problem.</p>
+<p>We have theoretically proved the mathematical expression of optimal shortest domain path for the multi-layer 2D grid. The shortest domain path is related to the length (mod 3) and width (mod 3) of the grid, and has limited forms.
+Then, the domain (critical) OLs within the trajectory in each optimal domain path can be determined.</p>
+<p>We extend the concept of dominating set in graph theory to define the dominating path, and formulate the problem as finding the minimum dominating path in the grid to cover the sensing scope in 3D space with the minimum trajectory. Experimental results show that the proposed algorithm can save 32% less time than existing approaches to complete sensing the given space; during the battery life, it can cover 19% more sensing scope than existing solutions.</p>
+<p>Related works have been submitted to <b>IEEE INFOCOM 2018</b>.</p>
 <h2>Realtime Profiling of Fine-Grained 3D AQI Distribution using UAV Sensing</h2>
 <p>Time: <i>Dec. 2016 - Jun. 2017</i></p>
 <img src="static/system.jpg" height="180px">
