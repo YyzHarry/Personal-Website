@@ -31,48 +31,42 @@
 <p>These are my research projects. I'm now working in the <a href="http://wireless.pku.edu.cn/">Institute of Advanced Communications</a>, advised by <a href="http://wireless.pku.edu.cn/home/songly/index.html">Prof. Lingyang Song</a>.</p>
 <h2>Optimal Trajectory Planning of Drones for 3D Mobile Sensing</h2>
 <p>Time: <i>Jun. 2017 - Aug. 2017</i></p>
-<img src="static/Compare1.jpg" height="150px">
-<img src="static/Compare2.jpg" height="150px">
-<img src="static/Compare3.jpg" height="150px">
-<img src="static/Compare4.jpg" height="150px">
-<img src="static/TimeDomain_3d.jpg" height="200px">
-<img src="static/BatteryDomain_3d.jpg" height="200px">
-<p>Mobile sensing is challenging in 3D space, as there are many inaccessible places where people rarely venture. Unmanned aerial vehicle (UAV) has greatly extended the scope of mobile sensing in 3D space, but the short battery life of drones has largely restricted the wide adoption of these applications. To maximally expand the sensing scope of the drone, we study the trajectory planning problem for optimizing its flight route in 3D space, given its limited battery life.</p>
-<p>As the conventional ways, they always select number of stops first, then find the shortest path connecting those stops, like the famous TSP problem. However, such a stop-selection-first strategy does not work well for planning a drone's trajectory. Hence, we take a different approach by finding the optimal path first and then selecting the measurement locations, using the domain sets in graph theory.</p>
-<p>We establish a multi-layer 3D network model that are formed by multiple 2D networks for mobile sensing in the 3D space. Then, we formulate the problem as a combination of the minimum dominating path problem and the constrained minimum dominating set problem.</p>
-<p>We have theoretically proved the mathematical expression of optimal shortest domain path for the multi-layer 2D grid. The shortest domain path is related to the length (mod 3) and width (mod 3) of the grid, and has limited forms.
-Then, the domain (critical) OLs within the trajectory in each optimal domain path can be determined.</p>
-<p>We extend the concept of dominating set in graph theory to define the dominating path, and formulate the problem as finding the minimum dominating path in the grid to cover the sensing scope in 3D space with the minimum trajectory. Experimental results show that the proposed algorithm can save 32% less time than existing approaches to complete sensing the given space; during the battery life, it can cover 19% more sensing scope than existing solutions.</p>
+<img src="static/dominating1.png" height="180px">
+<img src="static/dominating2.png" height="180px">
+<img src="static/dominating3.png" height="180px">
+<img src="static/TimeDomain_3d.jpg" height="180px">
+<p>We study the trajectory planning problem for optimizing the UAV's flight route in 3D space for mobile sensing.
+Unlike conventional stop-selection-first strategy, we take a different approach by finding the optimal path first and then selecting the measurement locations, using the dominating sets in graph theory.</p>
+<p>We establish a multi-layer 3D network model that are formed by multiple 2D networks. We then extend the concept of dominating set in graph theory to define the dominating path, and formulate the problem as a combination of the minimum dominating path problem and the constrained minimum dominating set problem.</p>
+<p>We theoretically analyzed and proved the mathematical expression of optimal shortest dominating path for the multi-layer 2D grid, which determines the lower bound of the shortest path. The shortest dominating path is related to the length (mod 3) and width (mod 3) of the grid, and has limited forms.
+Our proposed algorithm can save 32% less time than existing approaches to complete sensing the given space; during the battery life, it can cover 19% more sensing scope than existing solutions.</p>
 <p>Related works have been submitted to <b>IEEE INFOCOM 2018</b>.</p>
 <h2>Realtime Profiling of Fine-Grained 3D AQI Distribution using UAV Sensing</h2>
 <p>Time: <i>Dec. 2016 - Jun. 2017</i></p>
 <img src="static/system.jpg" height="180px">
 <img src="static/Model.jpg" height="180px">
 <img src="static/monitoring.jpg" height="180px">
-<p>We used UAV-based sensors to study the distribution of AQI in specific and normal scenarios.
-A dynamic system is built consisting of an UAV and other sensors, and implemented real-time measurement.</p>
-<p>Then we proposed a novel distribution model, consists of a linear part using Gaussian Plume model, and a non-linear part using artificial neural networks (ANN), to realize the precisely prediction of AQI in a given fine-grained area.
+<p>Air Quality index (AQI) monitoring is crucial for public health. Unlike traditional coarse-grained 2D AQI map built by static sensors, we design a mobile sensing system based on UAV to construct realtime 3D AQI map. We also focus on the fine-grained AQI distribution, as the AQI value has intrinsic changes in fine-grained area.
+We propose a novel distribution model that consists of a linear part using Gaussian Plume model (GPM), and a non-linear part using artificial neural networks (ANN), to realize the precisely prediction of AQI in a given fine-grained area.
 We used the data we collected to train the models, and its accuracy has been proved to outperform other existing models.</p>
-<p>Then based on the proposed model, we design the <i>adaptive monitoring algorithms</i> for UAV realtime measurement, named as <i>complete</i> monitoring and <i>selective</i> monitoring.
-We focus on how to select only a few target cubes to represent the whole AQI distribution.
-By analyzing the physical characteristic, an objective function is formed to choose a sub-optimal way for the UAV trajectory.
-Experimental results have shown our proposal can effectively reduce the power consumption of whole system.</p>
-<p>Up to now, our work has been <b>accepted</b> by <i><b>IEEE GLOBECOM 2017</b></i>, and submitted to <i><b>IEEE Internet of Things Journal</b></i>.</p>
-<h2>3D Spectrum Map Reconstruction using UAV Sensing</h2>
+<p>Intuitively, a larger number of measurement locations introduces a higher accuracy of the AQI map. However, based on the physical characteristic of the proposed model, we can build a sufficiently accurate AQI map by regularly measuring only a few locations. This process can effectively save the energy, and thus improve the efficiency of the system.
+Hence, we design the <i>adaptive monitoring algorithms</i> for UAV realtime measurement, named as <i>complete</i> monitoring and <i>selective</i> monitoring.
+Also, an objective function is formed to choose a sub-optimal way for the UAV trajectory planning over the monitoring process.
+Experimental results have shown our mechanism can effectively reduce the power consumption of whole system.</p>
+<p>Related has been accepted by <b>IEEE GLOBECOM 2017</b>, and submitted to <b>IEEE Internet of Things Journal</b>.</p>
+<h2>Outdoor 3D Spectrum Map Reconstruction via UAV Sensing</h2>
 <p>Time: <i>Aug. 2016 - Dec. 2016</i></p>
-<img src="static/uav2.png" height="120px" width="150px">
-<img src="static/uav1.png" height="120px" width="150px">
-<img src="static/uav3.png" height="120px" width="150px">
-<p>Above are images of our own built UAV.</p>
-<p>We are doing research on UAV(Unmanned Aerial Vehicles)-aided communication. By adding several written modules , we aim to realize new applications under new scenarios of wireless communication.
-I assembled two UAVs with separated modules, adjusted their PID parameters by debugging motors’ outputs, and realized stable flying and loitering. Also, SITL on Linux was used to do UAV simulations.</p>
-<p>The main method we use is that we divided whole room into several cubes, used the Sentinel cruise function to sense the Wi-Fi intensity of each cube and collected several sets of data timely.
-And we used each cube’s statistical mean of RSS as the merit to rebuild the 3D Wi-Fi Spectrum map of indoor circumstance.</p>
-<p>We now try to use UAV, associated with Android phones, to sense the intensity of WiFi.
-Then we use the collected datas to build the 3D Wi-Fi Spectrum of indoor circumstance.</p>
+<img src="static/uav3.png" height="180px">
+<img src="static/RSS_map1.png" height="180px">
+<img src="static/RSS_map2.png" height="180px">
+<p>We study the 3D Wi-Fi (or cellular) spectrum map reconstruction in outdoor complex environment.
+We first assemble two UAVs with separated modules, adjust their PID parameters by debugging motors’ outputs (simulations by SITL on Linux), and realize stable flying and loitering.</p>
+<p>We divide outdoor complex space into several cubes with regular shape (may not have the same size), using an Android smartphone boarded on the UAV to sense the Wi-Fi intensity (RSS) of each cube.
+Between equal time intervals, the UAV randomly passes through the whole area and detect possible dramatic changes, using random walking model via Markov chain. The area that has large changes in RSS would be marked as &ldquo;suspicious&rdquo; area, which would be measured again in the update period.
+Our proposed mechanism for controlling the UAV is collaborated to be robust in 3D space over complex urban area</p>
 <div id="footer">
 <div id="footer-text">
-Last generated on 2017-08-02.
+Last generated on 2017-08-26.
 </div>
 </div>
 </td>
