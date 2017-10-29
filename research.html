@@ -29,9 +29,15 @@
 <h1>Research</h1>
 </div>
 <p>These are my research projects. I'm now working in the <a href="http://wireless.pku.edu.cn/">Institute of Advanced Communications</a>, advised by <a href="http://wireless.pku.edu.cn/home/songly/index.html">Prof. Lingyang Song</a>.</p>
-<h2>Sensor Location Recommendation for 3D Fine-Grained Air Quality Monitoring using Semi-Supervised Learning</h2>
-<p>Time: <i>Sept. 2017 - Present</i></p>
-<p>Under preparation. Will come out soon.</p>
+<h2>Sensor Location Recommendation using Semi-Supervised Learning</h2>
+<p>Time: <i>Sept. 2017 - Nov. 2017</i></p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="static/LocatRcmd_model.jpg" height="250px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="static/LocatRcmd_fig1.jpg" height="200px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="static/LocatRcmd_fig2.jpg" height="200px">
+<p>We investigate how to recommend the most suitable sensor locations for fine-grained air quality monitoring in urban 3D space (e.g., around an office building within hundred meters scale), based on sparse raw data in spatial-temporal perspectives. The energy-efficiency is also considered by using the least number of sensors to achieve higher accuracy than other existing approaches.</p>
+<p>We first establish a multi-layer 3D spatial-temporal correlation graph, by connecting nodes in both spatial and temporal dimensions. The nodes with monitoring data are named as <i>labeled</i> nodes, while nodes without monitoring data are named as <i>unlabeled</i> nodes. To learn the edges&rsquo; weights and determine the AQI distribution (presented by probability functions) of unlabeled nodes, we propose an entropy-based semi-supervised learning (ESSL) model. The proposed ESSL utilizes key features in the fine-grained AQI distribution and is robust for very sparse historical data.</p>
+<p>Further, we consider the entropy of the AQI distribution at unobserved locations as the uncertainty of our model. The objective is to select locations that can minimize the model’s entropy. We then propose an entropy minimization ranking (EMR) algorithm for recommending such a set of locations for sensor deployment, to obtain the best estimation accuracy. The EMR algorithm can recommend the most suitable sensor locations, which can approximate the optimal deployment.</p>
+<p>Related works have been submitted to <b>IEEE ICC 2018</b>.</p>
 <h2>Optimal Trajectory Planning of Drones for 3D Mobile Sensing</h2>
 <p>Time: <i>Jun. 2017 - Aug. 2017</i></p>
 <img src="static/dominating1.png" height="180px">
@@ -74,7 +80,7 @@ Between equal time intervals, the UAV randomly passes through the whole area and
 Our proposed mechanism for controlling the UAV is collaborated to be robust in 3D space over complex urban area</p>
 <div id="footer">
 <div id="footer-text">
-Last generated on 2017-10-05.
+Last generated on 2017-10-29.
 </div>
 </div>
 </td>
