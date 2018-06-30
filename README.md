@@ -1,7 +1,7 @@
 # My Personal Website
 
-## News!
-Website migrated to MIT's server. Please click __[HERE](http://www.mit.edu/~yuzhe/)__ to access it!
+## News
+Website migrated. Please click __[HERE](http://www.mit.edu/~yuzhe/)__ to access it.
 
 网站已经迁移，Github上备份了之前的几个版本. 访问新网页请 __[点击这里](http://www.mit.edu/~yuzhe/)__.
 
@@ -12,7 +12,7 @@ This repo contains several versions of my previous website frames.
 
 ## Usage
 ```Git
-$ git clone git@github.com:YyzHarry/yyzharry.github.io.git
+$ git clone git@github.com:YyzHarry/personal-website.git
 ```
 
 ## Link
